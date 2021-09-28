@@ -1,11 +1,11 @@
 # Commands to start on workspace startup
 tasks:
   - name: Install
-  init: npm install -g pnpm
-  command: pnpm install
-  
+    init: npm install -g pnpm
+    command: pnpm install
+
   - name: Launch development preview
-  command: pnpm dev
+    command: pnpm dev
 
 # Ports to expose on workspace startup
 ports:
