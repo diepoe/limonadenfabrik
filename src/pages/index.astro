@@ -1,0 +1,144 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+---
+
+<BaseLayout
+  title="Willkommen"
+  description=" Willkommen bei Fluffy, dem leckeren, spritzigen Erfrischungsgetränk!"
+>
+  <section class="p-3 lg:p-6 xl:p-8">
+    <figure class="flex flex-col items-center w-full my-5 xl:p-6">
+      <img
+        loading="lazy"
+        src="/icon.png"
+        alt="Fluffy Icon"
+        class="w-24 h-24 p-4 rounded-md shadow-lg xl:w-36 xl:h-36"
+        width="720"
+        height="720"
+      />
+    </figure>
+    <h1
+      class="
+        pb-2
+        text-xl text-center text-bluegray-800
+        md:text-2xl
+        font-branch
+        lg:text-3xl
+        xl:text-5xl
+      "
+    >
+      Willkommen bei Fluffy, dem leckeren, spritzigen Erfrischungsgetränk!
+    </h1>
+  </section>
+  <section class="p-3 lg:p-6 xl:p-8">
+    <a
+      href="https://unsplash.com/photos/cwM9uPpiAhM"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        loading="lazy"
+        src="/images/index/lemon.jpg"
+        alt="Zitrone am Zitronenbaum"
+        width="2800"
+        height="2800"
+        class="
+          float-right
+          m-3
+          transition
+          duration-300
+          rounded-lg
+          drop-shadow-lg
+          md:m-4
+          lg:m-6
+          xl:m-8
+          w-36
+          h-36
+          lg:w-44 lg:h-44
+          xl:w-48 xl:h-48
+          filter
+          hover:blur-sm
+        "
+      />
+    </a>
+    <h2
+      class="
+        text-lg text-bluegray-800
+        md:text-xl
+        lg:text-2xl
+        xl:text-3xl
+        font-branch
+      "
+    >
+      Fluffy - die spritzige Limonade
+    </h2>
+
+    <p class="text-justify lg:text-lg text-bluegray-600 font-kyivsans">
+      Hergestellt wird Fluffy aus den besten Zutaten aus der Um&shy;gebung. Wir
+      ver&shy;wenden fast aus&shy;schließlich öko&shy;logische
+      Anbau&shy;produkte. Somit ist unsere Limo&shy;nade nicht nur ungemein
+      lecker, sondern auch noch gesund.
+    </p>
+  </section>
+  <section
+    class="
+      p-2
+      mx-auto
+      rounded-md
+      shadow-md
+      bg-lemon-100
+      lg:p-4
+      xl:p-6
+      lg:pr-5 lg:w-5/6
+    "
+  >
+    <h2
+      class="
+        text-lg text-bluegray-800
+        md:text-xl
+        lg:text-2xl
+        xl:text-3xl
+        font-branch
+      "
+    >
+      Gewinnspiel
+    </h2>
+    <p class="p-2 text-justify lg:text-lg text-bluegray-700 font-kyivsans">
+      Machen Sie mit und Sie erhalten die Chance auf wertvolle Preise:
+    </p>
+    <ul
+      class="
+        p-2
+        mx-2
+        my-1
+        list-disc list-inside
+        font-kyivsans
+        lg:text-lg
+        text-bluegray-700
+      "
+    >
+      <li>1. Preis: Eine Reise in den Harz</li>
+      <li>2. Preis: Ein Jahr ein Monatsabo an Limonade</li>
+      <li>
+        3. Preis: Ein Warengutschein über 50 Euro für alle Produkte der
+        Fluffy-GmbH
+      </li>
+    </ul>
+    <img
+      loading="lazy"
+      src="/images/index/question-mark.png"
+      alt="Fragezeichen"
+      width="720"
+      height="720"
+      class="float-right w-24 h-24 p-2 lg:p-4 xl:w-36 xl:h-36"
+    />
+    <p class="p-2 text-justify lg:text-lg text-bluegray-700 font-kyivsans">
+      Teilnehmen kann jeder der mindestens 18 Jahre alt ist. Mitmachen kann man
+      noch bis zum 31.10.2007. Die Preisfrage lautet: Wieviele Mitarbeiter hat
+      die Fluffy GmbH zur Zeit?
+    </p>
+    <p class="p-2 text-center lg:text-lg text-bluegray-700 font-kyivsans">
+      <strong>Viel Erfolg!</strong>
+    </p>
+  </section>
+</BaseLayout>

@@ -1,0 +1,115 @@
+<script>
+  const items = [
+    { url: "/about", name: "Das Unternehmen" },
+    { url: "/shop", name: "Shop" },
+    { url: "/rezepte", name: "Rezepte" },
+    { url: "/partner", name: "Partner" },
+  ];
+  let showMenu = false;
+</script>
+
+<nav class="grid grid-cols-3 p-3 mb-2 md:p-4 xl:p-6 xl:mb-8 lg:mb-6">
+  <a href="/" class="col-span-2 lg:col-span-1">
+    <header class="flex flex-row items-center">
+      <img
+        src="/icon.png"
+        width="720"
+        height="720"
+        alt="Limonade Icon"
+        class="w-12 h-12 xl:w-14 xl:h-14"
+      />
+      <span class="text-xl font-cyrene md:text-2xl lg:text-3xl xl:text-4xl">
+        Fluffy Limonade
+      </span>
+    </header>
+  </a>
+  <!--Desktop Nav-->
+  <ul
+    class="hidden grid-cols-4 col-span-2 lg:grid place-content-center place-items-end"
+  >
+    {#each items as item}
+      <li
+        class="grid p-2 rounded-md max-w-max place-items-center text-bluegray-600 text-md lg:text-lg hover:bg-blue-100 2xl:text-xl font-kyivsans"
+      >
+        <a href={item.url}>{item.name}</a>
+      </li>
+    {/each}
+  </ul>
+  <!--Mobile nav-->
+  <div class="grid col-span-1 mr-4 lg:hidden place-items-end">
+    <button
+      class="p-2 rounded hover:bg-blue-100"
+      aria-label="show menu"
+      on:click={() => {
+        showMenu = true;
+      }}
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="stroke-current text-bluegray-800"
+        width="24"
+        height="24"
+        stroke-width="2"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path d="M0 0h24v24H0z" stroke="none" /><path
+          d="M4 6h16M4 12h16M4 18h16"
+        /></svg
+      >
+    </button>
+  </div>
+  <div class:hidden={!showMenu}>
+    <div
+      class="absolute inset-x-0 top-0 z-40 p-2 transition origin-top-right transform lg:hidden"
+    >
+      <div class="overflow-hidden rounded-lg shadow-md bg-blue-50">
+        <div class="px-3 pt-4">
+          <div class="-mr-2">
+            <button
+              type="button"
+              on:click={() => (showMenu = false)}
+              aria-label="Toggle mobile menu"
+              class="inline-flex items-center justify-center p-2 text-red-500 rounded-md bg-blue hover:text-red-600 hover:bg-blue-100 focus:outline-none"
+            >
+              <span class="sr-only">Close main menu</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 md:w-7 md:h-7"
+                width="24"
+                height="24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                ><path d="M0 0h24v24H0z" stroke="none" /><path
+                  d="M18 6 6 18M6 6l12 12"
+                /></svg
+              >
+            </button>
+          </div>
+        </div>
+        <div
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="main-menu"
+        >
+          <div class="px-4 pt-2 pb-3 space-y-2 md:px-8" role="none">
+            {#each items as item}
+              <a
+                rel="prefetch"
+                href={item.url}
+                on:click={() => (showMenu = false)}
+                class="block px-3 py-2 text-base font-medium leading-relaxed rounded-md font-kyivsans text-bluegray-700 md:text-lg hover:text-bluegray-900 hover:bg-blue-200"
+                role="menuitem">{item.name}</a
+              >
+            {/each}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

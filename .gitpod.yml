@@ -1,0 +1,20 @@
+# Commands to start on workspace startup
+tasks:
+  - name: Install
+  init: npm install -g pnpm
+  command: pnpm install
+  
+  - name: Launch development preview
+  command: pnpm dev
+
+# Ports to expose on workspace startup
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+# vscode extensions
+vscode:
+  extensions:
+    - svelte.svelte-vscode
+    - bradlc.vscode-tailwindcss
+    - astro-build.astro-vscode
