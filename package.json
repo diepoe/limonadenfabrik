@@ -6,11 +6,16 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.1",
     "astro": "^0.20.7",
+    "prettier": "^2.4.1",
     "tailwindcss": "^2.2.16"
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
