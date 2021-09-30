@@ -14,4 +14,4 @@ description: "Fluffy Rezept: Der Erfrischer"
 
 ## 🧑‍🍳 Zubereitung
 
-Zitrone durchschneiden und ausdrücken, Eis bis zum Glasrand und zum Abschluss mit Fluffy aufgießen. Das erfrischt für den ganzen Tag!
+Zitrone durchschneiden und ausdrücken, Eis bis zum Glasrand und zum Abschluss mit Fluffy aufgießen. Wenn gewünscht, mit etwas Minze verfeinern. Das erfrischt für den ganzen Tag!
