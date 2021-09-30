@@ -6,7 +6,7 @@ description: "Fluffy Rezept: Der schnelle Läufer"
 
 # Der schnelle Läufer
 
-## 🛒 Zutate
+## 🛒 Zutaten
 
 - 🍋 1 Limette
 - 🧂 Kümmel

@@ -6,7 +6,7 @@ description: "Fluffy Rezept: Der magische Trunk"
 
 # Der magische Trunk
 
-## 🛒 Zutate
+## 🛒 Zutaten
 
 - 🍊 1 frische Apfelsine
 - 🍎 1 Apfel
