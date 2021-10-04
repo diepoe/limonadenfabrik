@@ -13,9 +13,13 @@
     "@tailwindcss/typography": "^0.4.1",
     "astro": "^0.20.7",
     "prettier": "^2.4.1",
+    "prettier-plugin-svelte": "^2.4.0",
     "tailwindcss": "^2.2.16"
   },
   "lint-staged": {
     "*.{js,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.2.2"
   }
 }
