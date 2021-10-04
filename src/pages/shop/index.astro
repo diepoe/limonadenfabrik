@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro"
+import ShoppingItems from "../../components/shop/ShoppingItems.svelte"
 ---
 
 <BaseLayout title="Shop" description="Fluffy Limonade online bestellen">
@@ -26,4 +27,5 @@ import BaseLayout from "../../layouts/BaseLayout.astro"
       lassen.
     </p>
   </section>
+  <ShoppingItems client:load />
 </BaseLayout>
