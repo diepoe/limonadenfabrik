@@ -17,7 +17,7 @@
     "tailwindcss": "^2.2.16"
   },
   "lint-staged": {
-    "*.{js,css,md,astro,svelte}": "prettier --write"
+    "*.{js,mjs,css,md,astro,svelte}": "prettier --write"
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.2.2"
