@@ -15,6 +15,7 @@ const recipes = [{"url": "/rezepte/der-magische-trunk", "img":"/images/rezepte/d
         text-xl
         md:mb-4
         text-bluegray-800
+        dark:text-bluegray-100
         md:text-2xl
         font-branch
         lg:text-3xl
@@ -58,7 +59,15 @@ const recipes = [{"url": "/rezepte/der-magische-trunk", "img":"/images/rezepte/d
         "
       />
     </a>
-    <p class="text-justify lg:text-lg text-bluegray-700 font-kyivsans">
+    <p
+      class="
+        text-justify
+        lg:text-lg
+        text-bluegray-700
+        dark:text-bluegray-300
+        font-kyivsans
+      "
+    >
       Fluffy Limonade ent&shy;spricht dem Trend nach natür&shy;licher und
       ge&shy;sunder Er&shy;nährung: Ein alkohol&shy;freies
       Erfrisch&shy;ungs&shy;getränk, das auf natürliche Art her&shy;gestellt
@@ -71,7 +80,6 @@ const recipes = [{"url": "/rezepte/der-magische-trunk", "img":"/images/rezepte/d
     </p>
   </section>
   <section>
-    <!--TODO: Add images to recipes-->
     <ul
       class="
         grid
@@ -90,11 +98,13 @@ const recipes = [{"url": "/rezepte/der-magische-trunk", "img":"/images/rezepte/d
         class="
           grid
           w-full
-          transition-shadow
-          ease-in-out
+          transition
+          duration-500
           rounded-md
           shadow-lg
+          hover:translate-y-1
           bg-blue-50
+          dark:bg-bluegray-800
           hover:shadow-xl
           place-items-center
           text-bluegray-600 text-md
@@ -103,11 +113,24 @@ const recipes = [{"url": "/rezepte/der-magische-trunk", "img":"/images/rezepte/d
           font-kyivsans
         "
       >
-        <img src="{item.img}" alt="{item.name}" loading="lazy" />
+        <img
+          src="{item.img}"
+          alt="{item.name}"
+          loading="lazy"
+          class="rounded-t-md"
+        />
         <a
           href="{item.url}"
           rel="preload"
-          class="pb-2 mx-auto my-2 no-underline hover:underline"
+          class="
+            pb-2
+            mx-auto
+            my-2
+            no-underline
+            hover:underline
+            dark:text-bluegray-200
+            text-bluegray-800
+          "
           >{item.name}</a
         >
       </li>

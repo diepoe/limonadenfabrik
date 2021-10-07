@@ -12,7 +12,15 @@ import BaseLayout from "../layouts/BaseLayout.astro"
         loading="lazy"
         src="/icon.png"
         alt="Fluffy Icon"
-        class="w-24 h-24 p-4 rounded-md shadow-lg xl:w-36 xl:h-36"
+        class="
+          w-24
+          h-24
+          p-4
+          rounded-md
+          shadow-lg
+          dark:shadow-xl
+          xl:w-36 xl:h-36
+        "
         width="720"
         height="720"
       />
@@ -20,7 +28,9 @@ import BaseLayout from "../layouts/BaseLayout.astro"
     <h1
       class="
         pb-2
-        text-xl text-center text-bluegray-800
+        text-xl text-center
+        dark:text-bluegray-100
+        text-bluegray-800
         md:text-2xl
         font-branch
         lg:text-3xl
@@ -64,6 +74,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
     <h2
       class="
         text-lg text-bluegray-800
+        dark:text-bluegray-100
         md:text-xl
         lg:text-2xl
         xl:text-3xl
@@ -73,7 +84,15 @@ import BaseLayout from "../layouts/BaseLayout.astro"
       Fluffy - die spritzige Limonade
     </h2>
 
-    <p class="text-justify lg:text-lg text-bluegray-600 font-kyivsans">
+    <p
+      class="
+        text-justify
+        lg:text-lg
+        text-bluegray-600
+        dark:text-bluegray-300
+        font-kyivsans
+      "
+    >
       Hergestellt wird Fluffy aus den besten Zutaten aus der Um&shy;gebung. Wir
       ver&shy;wenden fast aus&shy;schließlich öko&shy;logische
       Anbau&shy;produkte. Somit ist unsere Limo&shy;nade nicht nur ungemein
@@ -87,6 +106,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
       rounded-md
       shadow-md
       bg-lemon-100
+      dark:bg-lemon-600
       lg:p-4
       xl:p-6
       lg:pr-5 lg:w-5/6
@@ -95,6 +115,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
     <h2
       class="
         text-lg text-bluegray-800
+        dark:text-bluegray-100
         md:text-xl
         lg:text-2xl
         xl:text-3xl
@@ -103,7 +124,16 @@ import BaseLayout from "../layouts/BaseLayout.astro"
     >
       Gewinnspiel
     </h2>
-    <p class="p-2 text-justify lg:text-lg text-bluegray-700 font-kyivsans">
+    <p
+      class="
+        p-2
+        text-justify
+        lg:text-lg
+        text-bluegray-700
+        dark:text-bluegray-50
+        font-kyivsans
+      "
+    >
       Machen Sie mit und Sie erhalten die Chance auf wertvolle Preise:
     </p>
     <ul
@@ -115,6 +145,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
         font-kyivsans
         lg:text-lg
         text-bluegray-700
+        dark:text-bluegray-50
       "
     >
       <li>Preis: Eine Reise in den Harz</li>
@@ -131,12 +162,30 @@ import BaseLayout from "../layouts/BaseLayout.astro"
       height="720"
       class="float-right w-24 h-24 p-2 lg:p-4 xl:w-36 xl:h-36"
     />
-    <p class="p-2 text-justify lg:text-lg text-bluegray-700 font-kyivsans">
+    <p
+      class="
+        p-2
+        text-justify
+        lg:text-lg
+        text-bluegray-700
+        dark:text-bluegray-50
+        font-kyivsans
+      "
+    >
       Teilnehmen kann jeder der mindestens 18 Jahre alt ist. Mitmachen kann man
       noch bis zum 31.10.2007. Die Preisfrage lautet: Wieviele Mitarbeiter hat
       die Fluffy GmbH zur Zeit?
     </p>
-    <p class="p-2 text-center lg:text-lg text-bluegray-700 font-kyivsans">
+    <p
+      class="
+        p-2
+        text-center
+        lg:text-lg
+        text-bluegray-700
+        dark:text-bluegray-50
+        font-kyivsans
+      "
+    >
       <strong>Viel Erfolg!</strong>
     </p>
   </section>

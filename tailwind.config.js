@@ -4,7 +4,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   mode: "jit",
   purge: ["./public/**/*.html", "./src/**/*.{astro,js,jsx,svelte,ts,tsx,vue}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media", // false or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
@@ -25,7 +25,7 @@ module.exports = {
         bluegray: colors.blueGray,
         lemon: colors.yellow,
       },
-      typography: {
+      typography: (theme) => ({
         DEFAULT: {
           css: {
             fontFamily: [
@@ -33,7 +33,7 @@ module.exports = {
               "'Kyiv Sans'",
               ...defaultTheme.fontFamily.sans,
             ],
-            color: "#333",
+            color: "#0F172A",
             h1: {
               fontWeight: "400",
               fontFamily: "'Branch'",
@@ -52,11 +52,30 @@ module.exports = {
             },
           },
         },
-      },
+        dark: {
+          css: {
+            color: "#F8FAFC",
+            h1: {
+              color: "#F1F5F9",
+            },
+            h2: {
+              color: "#F1F5F9",
+            },
+            h3: {
+              color: "#F1F5F9",
+            },
+            h4: {
+              color: "#F1F5F9",
+            },
+          },
+        },
+      }),
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      typography: ["dark"],
+    },
   },
   plugins: [
     require("@tailwindcss/typography"),

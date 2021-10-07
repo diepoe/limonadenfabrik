@@ -36,11 +36,11 @@
 </script>
 
 <section
-  class="grid grid-cols-1 gap-3 justify-items-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-y-6"
+  class="grid grid-cols-1 gap-3 my-4 justify-items-center md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 lg:gap-y-6"
 >
   {#each items as item}
     <div
-      class="relative w-5/6 p-4 overflow-hidden transition-shadow duration-500 shadow-lg hover:translate-y-1 hover:shadow-xl sm:w-2/3 md:w-64 bg-blue-50 rounded-2xl"
+      class="relative w-5/6 p-4 overflow-hidden transition duration-500 shadow-lg hover:translate-y-1 hover:shadow-xl sm:w-2/3 md:w-64 bg-blue-50 dark:bg-bluegray-800 rounded-2xl"
     >
       <img
         alt={item.name}
@@ -50,13 +50,13 @@
       <div class="w-4/6">
         <h3 class="no-underline hover:underline">
           <a
-            class="mb-2 text-lg font-medium lg:text-xl font-kyivsans text-bluegray-800"
+            class="mb-2 text-lg font-medium lg:text-xl font-kyivsans text-bluegray-800 dark:text-bluegray-100"
             href={item.url}>{item.name}</a
           >
         </h3>
         <p>
           <a
-            class="text-xs font-kyivsans lg:text-base text-bluegray-400 line-clamp-4"
+            class="text-xs font-kyivsans lg:text-base text-bluegray-400 dark:text-bluegray-300 line-clamp-4"
             href={item.url}
           >
             {@html item.description}

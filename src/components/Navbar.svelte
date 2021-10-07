@@ -18,7 +18,9 @@
         alt="Limonade Icon"
         class="w-12 h-12 xl:w-14 xl:h-14"
       />
-      <span class="text-xl font-cyrene md:text-2xl lg:text-3xl xl:text-4xl">
+      <span
+        class="text-xl font-cyrene text-bluegray-900 dark:text-bluegray-200 md:text-2xl lg:text-3xl xl:text-4xl"
+      >
         Fluffy Limonade
       </span>
     </header>
@@ -29,7 +31,7 @@
   >
     {#each items as item}
       <li
-        class="grid p-2 rounded-md max-w-max place-items-center text-bluegray-600 text-md lg:text-lg hover:bg-blue-100 2xl:text-xl font-kyivsans"
+        class="grid p-2 rounded-md max-w-max place-items-center text-bluegray-600 dark:text-bluegray-300 text-md lg:text-lg hover:bg-blue-100 dark:hover:bg-bluegray-800 dark:hover:text-bluegray-200 2xl:text-xl font-kyivsans"
       >
         <a href={item.url}>{item.name}</a>
       </li>
@@ -38,7 +40,7 @@
   <!--Mobile nav-->
   <div class="grid col-span-1 mr-4 lg:hidden place-items-end">
     <button
-      class="p-2 rounded hover:bg-blue-100"
+      class="p-2 rounded hover:bg-blue-100 dark:hover:bg-bluegray-800"
       aria-label="show menu"
       on:click={() => {
         showMenu = true;
@@ -46,7 +48,7 @@
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="stroke-current text-bluegray-800"
+        class="stroke-current text-bluegray-800 dark:text-bluegray-200"
         width="24"
         height="24"
         stroke-width="2"
@@ -64,14 +66,16 @@
     <div
       class="absolute inset-x-0 top-0 z-40 p-2 transition origin-top-right transform lg:hidden"
     >
-      <div class="overflow-hidden rounded-lg shadow-md bg-blue-50">
+      <div
+        class="overflow-hidden rounded-lg shadow-md bg-blue-50 dark:bg-bluegray-800"
+      >
         <div class="px-3 pt-4">
           <div class="-mr-2">
             <button
               type="button"
               on:click={() => (showMenu = false)}
               aria-label="Toggle mobile menu"
-              class="inline-flex items-center justify-center p-2 text-red-500 rounded-md bg-blue hover:text-red-600 hover:bg-blue-100 focus:outline-none"
+              class="inline-flex items-center justify-center p-2 text-red-500 rounded-md dark:hover:bg-bluegray-700 hover:text-red-600 hover:bg-blue-100 focus:outline-none"
             >
               <span class="sr-only">Close main menu</span>
               <svg
@@ -103,7 +107,7 @@
                 rel="prefetch"
                 href={item.url}
                 on:click={() => (showMenu = false)}
-                class="block px-3 py-2 text-base font-medium leading-relaxed rounded-md font-kyivsans text-bluegray-700 md:text-lg hover:text-bluegray-900 hover:bg-blue-200"
+                class="block px-3 py-2 text-base font-medium leading-relaxed rounded-md font-kyivsans text-bluegray-700 dark:text-bluegray-300 md:text-lg hover:text-bluegray-900 hover:bg-blue-300"
                 role="menuitem">{item.name}</a
               >
             {/each}
