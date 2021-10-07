@@ -11,13 +11,12 @@
 <nav class="grid grid-cols-3 p-3 mb-2 md:p-4 xl:p-6 xl:mb-8 lg:mb-6">
   <a href="/" class="col-span-2 lg:col-span-1">
     <header class="flex flex-row items-center">
-      <img
-        src="/icon.png"
-        width="720"
-        height="720"
-        alt="Limonade Icon"
-        class="w-12 h-12 xl:w-14 xl:h-14"
-      />
+      <picture class="w-12 h-12 xl:w-14 xl:h-14">
+        <source type="image/webp" srcset="/icon.webp" />
+        <source type="image/png" srcset="/icon.png" />
+
+        <img src="/icon.png" width="720" height="720" alt="Limonade Icon" />
+      </picture>
       <span
         class="text-xl font-cyrene text-bluegray-900 dark:text-bluegray-200 md:text-2xl lg:text-3xl xl:text-4xl"
       >
