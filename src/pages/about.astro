@@ -7,6 +7,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
   description="Über unsere Fluffy Limonadenfabrik"
 >
   <section class="mb-2 md:mb-4">
+    <!--TODO: Mitarbeiterbild-->
     <h1
       class="
         pb-2
@@ -56,25 +57,21 @@ import BaseLayout from "../layouts/BaseLayout.astro"
       target="_blank"
       rel="noopener"
     >
-      <img
-        loading="lazy"
-        src="/images/about/lemonade-fruit.jpg"
-        alt="Zitrone am Zitronenbaum"
-        width="4912"
-        height="6140"
+      <picture
         class="
           float-left
           h-auto
-          m-3
+          m-2
           mt-1
+          mr-3
           transition
-          duration-300
+          duration-500
           rounded-lg
           xl:mt-1
           lg:mt-1
           drop-shadow-lg
-          md:ml-4
-          lg:m-4 lg:ml-6
+          md:ml-4 md:mr-5
+          lg:m-4 lg:ml-6 lg:mr-5
           xl:ml-8
           w-36
           lg:w-44
@@ -82,7 +79,18 @@ import BaseLayout from "../layouts/BaseLayout.astro"
           filter
           hover:blur-sm
         "
-      />
+      >
+        <source type="image/webp" srcset="/images/about/lemonade-fruit.webp" />
+        <source type="image/jpeg" srcset="/images/about/lemonade-fruit.jpg" />
+        <img
+          loading="lazy"
+          src="/images/about/lemonade-fruit.jpg"
+          alt="Zitrone am Zitronenbaum"
+          width="4912"
+          height="6140"
+          class="rounded-lg"
+        />
+      </picture>
     </a>
     <p class="p-2 text-justify lg:text-lg text-bluegray-600 font-kyivsans">
       Die Marke Fluffy als Garant für leckere Limo&shy;naden&shy;sorten, wurde
