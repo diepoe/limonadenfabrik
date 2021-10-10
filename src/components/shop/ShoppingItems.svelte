@@ -4,16 +4,16 @@
       url: "/shop/getraenkedosen",
       name: "Getränkedosen",
       description:
-        " Beliebt vor allem bei der Jugend ent&shy;hält jede Dose 100% Fluffy-Flavoury. Garantiert! Er&shy;hältlich in den Geschmacks&shy;richtungen “Zitrone“ und “Orange“. ",
-      image: "/images/shop/limo1.png",
+        "Beliebt vor allem bei der Jugend ent&shy;hält jede Dose 100% Fluffy-Flavoury. Garantiert! Er&shy;hältlich in den Geschmacks&shy;richtungen “Zitrone“ und “Orange“. ",
+      image: "/images/shop/limo1",
       price: "1,99",
     },
     {
       url: "/shop/bitter-lemon",
       name: "Bitter Lemon",
       description:
-        "Die Königin un&shy;serer Produkt&shy;palette. Ungemein lecker und er&shy;frischend! Ideal für den nächsten Drink!",
-      image: "/images/shop/bitter_lemon-preview.png",
+        "Die Königin un&shy;serer Produkt&shy;palette. Un&shy;gemein lecker und er&shy;frischend! Ideal für den nächsten Drink!",
+      image: "/images/shop/bitter_lemon-preview",
       price: "2,49",
     },
     {
@@ -21,7 +21,7 @@
       name: "Familienglück",
       description:
         "Die leck&shy;ere Limo&shy;nade für die ganze Familie. Er&shy;hältlich in den Geschmacks&shy;richtungen “Orange“ und “Himbeer“. ",
-      image: "/images/shop/limo_familienpack.png",
+      image: "/images/shop/limo_familienpack",
       price: "6,99",
     },
     {
@@ -29,7 +29,7 @@
       name: "Mehrwegkiste",
       description:
         "Fluffy gibt es natürlich auch in der kosten&shy;günstigen Mehrweg&shy;kiste. Diese schont die Um&shy;welt und den Geld&shy;beutel. ",
-      image: "/images/shop/limo_kiste.png",
+      image: "/images/shop/limo_kiste",
       price: "10,99",
     },
   ];
@@ -42,11 +42,11 @@
     <div
       class="relative w-5/6 p-4 overflow-hidden transition duration-500 shadow-lg hover:translate-y-1 hover:shadow-xl sm:w-2/3 md:w-64 bg-blue-50 dark:bg-bluegray-800 rounded-2xl"
     >
-      <img
-        alt={item.name}
-        src={item.image}
-        class="absolute w-40 h-auto mb-4 -right-20 -bottom-8"
-      />
+      <picture class="absolute w-40 h-auto mb-4 -right-20 -bottom-8">
+        <source type="image/webp" srcset={item.image + ".webp"} />
+        <source type="image/png" srcset={item.image + ".png"} />
+        <img alt={item.name} src={item.image + ".png"} />
+      </picture>
       <div class="w-4/6">
         <h3 class="no-underline hover:underline">
           <a
@@ -54,12 +54,18 @@
             href={item.url}>{item.name}</a
           >
         </h3>
-        <p>
+        <p class="mb-2">
           <a
             class="text-xs font-kyivsans lg:text-base text-bluegray-400 dark:text-bluegray-300 line-clamp-4"
             href={item.url}
           >
             {@html item.description}
+          </a>
+          <a
+            class="text-xs underline font-kyivsans lg:text-base text-bluegray-400 dark:text-bluegray-300"
+            href={item.url}
+          >
+            Mehr lesen
           </a>
         </p>
         <p class="text-xl font-medium text-lemon-500 font-kyivsans">
