@@ -6,22 +6,59 @@ import BaseLayout from "../layouts/BaseLayout.astro"
   title="Über das Unternehmen"
   description="Über unsere Fluffy Limonadenfabrik"
 >
-  <section class="mb-2 md:mb-4">
+  <section class="mb-4 md:mb-6">
     <!--TODO: Mitarbeiterbild-->
+    <!--TODO: Bild Hamburg-->
     <h1
       class="
         pb-2
-        text-xl text-bluegray-800
+        text-2xl text-bluegray-800
         dark:text-bluegray-100
-        md:text-2xl
+        md:text-3xl
         font-branch
-        lg:text-3xl
+        lg:text-4xl
         xl:text-5xl
       "
     >
       Über das Unternehmen
     </h1>
     <br />
+    <a href="https://unsplash.com/" target="_blank" rel="noopener">
+      <picture
+        class="
+          float-left
+          m-2
+          mt-1
+          mr-3
+          -mb-1
+          transition
+          duration-500
+          rounded-lg
+          lg:mb-1
+          xl:mt-1
+          lg:mt-1
+          drop-shadow-lg
+          md:ml-1 md:mr-5
+          lg:ml-1 lg:mr-5
+          xl:mr-8
+          lg:w-44
+          xl:w-48
+          filter
+          hover:blur-sm
+        "
+      >
+        <source type="image/webp" srcset="/images/about/hamburg.webp" />
+        <source type="image/jpeg" srcset="/images/about/hamburg.jpg" />
+        <img
+          loading="lazy"
+          src="/images/about/hamburg.jpg"
+          alt="Zitrone am Zitronenbaum"
+          width="2400"
+          height="1352"
+          class="w-48 h-auto rounded-lg sm:w-60 md:w-80 lg:w-full"
+        />
+      </picture>
+    </a>
     <p
       class="
         text-justify
@@ -45,6 +82,7 @@ import BaseLayout from "../layouts/BaseLayout.astro"
     class="
       p-2
       mx-2
+      my-2
       bg-yellow-100
       rounded-md
       shadow-md
