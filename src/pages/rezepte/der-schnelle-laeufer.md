@@ -2,6 +2,7 @@
 layout: ../../layouts/MarkdownLayout.astro
 title: Der schnelle Läufer
 description: "Fluffy Rezept: Der schnelle Läufer"
+img: "/images/rezepte/der-schnelle-laeufer.jpg"
 ---
 
 # Der schnelle Läufer

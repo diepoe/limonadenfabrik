@@ -2,6 +2,7 @@
 layout: ../../layouts/MarkdownLayout.astro
 title: Der Erfrischer
 description: "Fluffy Rezept: Der Erfrischer"
+img: "/images/rezepte/der-erfrischer.jpg"
 ---
 
 # Der Erfrischer

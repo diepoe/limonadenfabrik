@@ -2,6 +2,7 @@
 layout: ../../layouts/MarkdownLayout.astro
 title: Der magische Trunk
 description: "Fluffy Rezept: Der magische Trunk"
+img: "/images/rezepte/der-magische-trunk.jpg"
 ---
 
 # Der magische Trunk
