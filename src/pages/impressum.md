@@ -6,6 +6,8 @@ description: Impressum der Fluffy GmbH
 
 # Impressum
 
+**WICHTIGER HINWEIS: Diese Seite dient lediglich zum Demonstrationszwecke eines Schulprojektes!!! Die folgenden Angaben sind daher nicht richtig!!!**
+
 Angaben gemäß § 5 TMG
 
 <address>
