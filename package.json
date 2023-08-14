@@ -6,8 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "prepare": "husky install"
+    "preview": "astro preview"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.4.1",
