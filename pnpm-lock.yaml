@@ -21,7 +21,7 @@ devDependencies:
     version: 2.4.1
   prettier-plugin-svelte:
     specifier: ^2.4.0
-    version: 2.4.0(prettier@2.4.1)(svelte@3.43.0)
+    version: 2.4.0(prettier@2.4.1)(svelte@3.59.2)
   tailwindcss:
     specifier: ^2.2.16
     version: 2.2.16(autoprefixer@10.3.5)(postcss@8.4.27)
@@ -3053,14 +3053,14 @@ packages:
       synckit: 0.8.5
     dev: true
 
-  /prettier-plugin-svelte@2.4.0(prettier@2.4.1)(svelte@3.43.0):
+  /prettier-plugin-svelte@2.4.0(prettier@2.4.1)(svelte@3.59.2):
     resolution: {integrity: sha512-JwJ9bOz4XHLQtiLnX4mTSSDUdhu12WH8sTwy/XTDCSyPlah6IcV7NWeYBZscPEcceu2YnW8Y9sJCP40Z2UH9GA==}
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
       svelte: ^3.2.0
     dependencies:
       prettier: 2.4.1
-      svelte: 3.43.0
+      svelte: 3.59.2
     dev: true
 
   /prettier@2.4.1:
@@ -3513,8 +3513,8 @@ packages:
     dependencies:
       has-flag: 4.0.0
 
-  /svelte@3.43.0:
-    resolution: {integrity: sha512-T2pMPHrxXp+SM8pLLUXLQgkdo+JhTls7aqj9cD7z8wT2ccP+OrCAmtQS7h6pvMjitaZhXFNnCK582NxDpy8HSw==}
+  /svelte@3.59.2:
+    resolution: {integrity: sha512-vzSyuGr3eEoAtT/A6bmajosJZIUWySzY2CzB3w2pgPvnkUjGqlDnsNnA0PMO+mMAhuyMul6C2uuZzY6ELSkzyA==}
     engines: {node: '>= 8'}
     dev: true
 
