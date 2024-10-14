@@ -1506,11 +1506,6 @@ packages:
   nanocolors@0.1.12:
     resolution: {integrity: sha512-2nMHqg1x5PU+unxX7PGY7AuYxl2qDx7PSrTRjizr8sxdd3l/3hBuWWaki62qmtYm2U5i4Z5E7GbjlyDFhs9/EQ==}
 
-  nanoid@3.1.25:
-    resolution: {integrity: sha512-rdwtIXaXCLFAQbnfqDRnI6jaRHp9fTcYBjtFKE8eezcZ7LuLjhUaQGNeMXf1HmRoCH32CLz6XwX0TtxEOS/A3Q==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   nanoid@3.3.6:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -1679,10 +1674,6 @@ packages:
 
   postcss-value-parser@4.1.0:
     resolution: {integrity: sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==}
-
-  postcss@8.3.7:
-    resolution: {integrity: sha512-9SaY7nnyQ63/WittqZYAvkkYPyKxchMKH71UDzeTmWuLSvxTRpeEeABZAzlCi55cuGcoFyoV/amX2BdsafQidQ==}
-    engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.4.27:
     resolution: {integrity: sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==}
@@ -1882,10 +1873,6 @@ packages:
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
-
-  source-map-js@0.6.2:
-    resolution: {integrity: sha512-/3GptzWzu0+0MBQFrDKzw/DvvMTUORvgY6k6jd/VS6iCR4RDTKWH6v6WPwQoUO8667uQEf9Oe38DxAYWY5F/Ug==}
-    engines: {node: '>=0.10.0'}
 
   source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
@@ -2092,8 +2079,8 @@ packages:
   vfile@5.3.7:
     resolution: {integrity: sha512-r7qlzkgErKjobAmyNIkkSpizsFPYiUPuJb5pNW1RB4JcYVZhs4lIbVqk8XPk033CV/1z8ss5pkax8SuhGpcG8g==}
 
-  vite@4.4.8:
-    resolution: {integrity: sha512-LONawOUUjxQridNWGQlNizfKH89qPigK36XhMI7COMGztz8KNY0JHim7/xDd71CZwGT4HtSRgI7Hy+RlhG0Gvg==}
+  vite@4.5.5:
+    resolution: {integrity: sha512-ifW3Lb2sMdX+WU91s3R0FyQlAyLxOzCSCP37ujw0+r5POeHPwe6udWVIElKQq8gk3t7b8rkmvqC6IHBpCff4GQ==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -2812,8 +2799,8 @@ snapshots:
       typescript: 5.1.6
       unist-util-visit: 4.1.2
       vfile: 5.3.7
-      vite: 4.4.8(@types/node@16.9.6)
-      vitefu: 0.2.4(vite@4.4.8(@types/node@16.9.6))
+      vite: 4.5.5(@types/node@16.9.6)
+      vitefu: 0.2.4(vite@4.5.5(@types/node@16.9.6))
       which-pm: 2.0.0
       yargs-parser: 21.1.1
       zod: 3.21.4
@@ -3895,8 +3882,6 @@ snapshots:
 
   nanocolors@0.1.12: {}
 
-  nanoid@3.1.25: {}
-
   nanoid@3.3.6: {}
 
   network-information-types@0.1.1(typescript@5.1.6):
@@ -4035,7 +4020,7 @@ snapshots:
   postcss-js@3.0.3:
     dependencies:
       camelcase-css: 2.0.1
-      postcss: 8.3.7
+      postcss: 8.4.27
 
   postcss-load-config@3.1.0:
     dependencies:
@@ -4056,12 +4041,6 @@ snapshots:
   postcss-value-parser@3.3.1: {}
 
   postcss-value-parser@4.1.0: {}
-
-  postcss@8.3.7:
-    dependencies:
-      nanocolors: 0.1.12
-      nanoid: 3.1.25
-      source-map-js: 0.6.2
 
   postcss@8.4.27:
     dependencies:
@@ -4107,7 +4086,7 @@ snapshots:
     dependencies:
       commander: 6.2.1
       glob: 7.2.0
-      postcss: 8.3.7
+      postcss: 8.4.27
       postcss-selector-parser: 6.0.6
 
   queue-microtask@1.2.3: {}
@@ -4301,8 +4280,6 @@ snapshots:
       is-arrayish: 0.3.2
 
   sisteransi@1.0.5: {}
-
-  source-map-js@0.6.2: {}
 
   source-map-js@1.0.2: {}
 
@@ -4553,7 +4530,7 @@ snapshots:
       unist-util-stringify-position: 3.0.0
       vfile-message: 3.0.2
 
-  vite@4.4.8(@types/node@16.9.6):
+  vite@4.5.5(@types/node@16.9.6):
     dependencies:
       esbuild: 0.18.17
       postcss: 8.4.27
@@ -4562,9 +4539,9 @@ snapshots:
       '@types/node': 16.9.6
       fsevents: 2.3.2
 
-  vitefu@0.2.4(vite@4.4.8(@types/node@16.9.6)):
+  vitefu@0.2.4(vite@4.5.5(@types/node@16.9.6)):
     optionalDependencies:
-      vite: 4.4.8(@types/node@16.9.6)
+      vite: 4.5.5(@types/node@16.9.6)
 
   vscode-css-languageservice@6.2.6:
     dependencies:
