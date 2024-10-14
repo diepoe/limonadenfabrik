@@ -1469,8 +1469,8 @@ packages:
   micromark@3.0.5:
     resolution: {integrity: sha512-QfjERBnPw0G9mxhOCkkbRP0n8SX8lIBLrEKeEVceviUukqVMv3hWE4AgNTOK/W6GWqtPvvIHg2Apl3j1Dxm6aQ==}
 
-  micromatch@4.0.4:
-    resolution: {integrity: sha512-pRmzw/XUcwXGpD9aI9q/0XOwLNygjETJ8y0ao0wdqprrzDa4YnxLcz7fQRZr8voh8V10kGhABbNcHVk5wHgWwg==}
+  micromatch@4.0.8:
+    resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
 
   mime@3.0.0:
@@ -1636,6 +1636,10 @@ packages:
 
   picomatch@2.3.0:
     resolution: {integrity: sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw==}
+    engines: {node: '>=8.6'}
+
+  picomatch@2.3.1:
+    resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
 
   pify@4.0.1:
@@ -3182,7 +3186,7 @@ snapshots:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.4
+      micromatch: 4.0.8
 
   fast-glob@3.3.1:
     dependencies:
@@ -3190,7 +3194,7 @@ snapshots:
       '@nodelib/fs.walk': 1.2.8
       glob-parent: 5.1.2
       merge2: 1.4.1
-      micromatch: 4.0.4
+      micromatch: 4.0.8
 
   fastq@1.13.0:
     dependencies:
@@ -3212,7 +3216,7 @@ snapshots:
 
   find-yarn-workspace-root2@1.2.16:
     dependencies:
-      micromatch: 4.0.4
+      micromatch: 4.0.8
       pkg-dir: 4.2.0
 
   fraction.js@4.1.1: {}
@@ -3857,10 +3861,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  micromatch@4.0.4:
+  micromatch@4.0.8:
     dependencies:
       braces: 3.0.3
-      picomatch: 2.3.0
+      picomatch: 2.3.1
 
   mime@3.0.0: {}
 
@@ -4010,6 +4014,8 @@ snapshots:
   picocolors@1.0.0: {}
 
   picomatch@2.3.0: {}
+
+  picomatch@2.3.1: {}
 
   pify@4.0.1: {}
 
